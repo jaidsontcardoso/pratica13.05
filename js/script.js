@@ -1,8 +1,8 @@
-document.write("<h1>Estamos executando o script.js</h1>");
-document.write("Esse script está em um arquivo externo e é referenciado no header do HTML");
-console.log("Esse script está no cabeçalho do HTML");
-console.log("Primeiro");
-console.log("Segundo");
+document.write("<h1>Estamos executando o script.js</h1>"); // o comando sobreescreve conteudos do documento body
+document.write("Esse script está em um arquivo externo e é referenciado no header do HTML"); // o comando sobreescreve conteudos do documento body
+console.log("Esse script está no cabeçalho do HTML"); //metodo util para testar o codigo
+console.log("Primeiro"); //metodo util para testar o codigo
+console.log("Segundo");  //metodo util para testar o codigo
 
 // Comentário de uma linha
 
@@ -13,10 +13,10 @@ console.log("Segundo");
 */
 
 // Tipagem fraca
-var teste = 1;
-document.write("<hr>O valor da variável teste é " + teste + "<hr>");
-teste = 'joao';
-document.write("O valor da variável teste agora é " + teste + "<hr>");
+var teste = 1; // variavel teste sendo criada sem definir seu tipo (int, float, string, bolean, swings)
+document.write("<hr>O valor da variável teste é " + teste + "<hr>"); //cocatenando a variavel "teste" valor = 1
+teste = 'joao';  //reiniciando a varivavel com novo valor
+document.write("O valor da variável teste agora é " + teste + "<hr>");  //cocatenando a variavel "teste" valor = joao
 
 // Variável global - criada sem necessidade de declaração
 nome = 'joao';
